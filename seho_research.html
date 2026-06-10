@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --blue:    #7BA7C9;
+    --blue-lt: #E8F0F7;
+    --ink:     #1a1a1a;
+    --muted:   #666;
+    --light:   #f5f3f0;
+    --line:    #ddd;
+    --max:     860px;
+    --serif:   'EB Garamond', Georgia, serif;
+    --sans:    'DM Sans', system-ui, sans-serif;
+  }
+  body { font-family: var(--sans); font-size: 16px; line-height: 1.7; color: var(--ink); background: #faf9f7; min-height: 100vh; }
+  nav { position: sticky; top: 0; z-index: 100; background: rgba(250,249,247,0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); padding: 0 2rem; }
+  .nav-inner { max-width: var(--max); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+  .nav-name { font-family: var(--serif); font-size: 1.05rem; letter-spacing: 0.01em; color: var(--ink); text-decoration: none; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { font-size: 0.85rem; font-weight: 400; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: color 0.15s; padding-bottom: 2px; }
+  .nav-links a:hover, .nav-links a.active { color: var(--ink); border-bottom: 1.5px solid var(--blue); }
+  .page { max-width: var(--max); margin: 0 auto; padding: 3.5rem 2rem 5rem; }
+  h1 { font-family: var(--serif); font-size: 2rem; font-weight: 400; margin-bottom: 0.2rem; }
+  h3 { font-family: var(--sans); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); margin: 2.5rem 0 0.75rem; }
+  .section-rule { border: none; border-top: 1px solid var(--line); margin: 2rem 0; }
+  a { color: var(--blue); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .paper { margin-bottom: 1.4rem; }
+  .paper-title { font-family: var(--serif); font-size: 1.05rem; line-height: 1.5; }
+  .paper-meta { font-size: 0.85rem; color: var(--muted); margin-top: 0.2rem; }
+  .paper-links { font-size: 0.82rem; margin-top: 0.3rem; display: flex; gap: 0.75rem; flex-wrap: wrap; }
+  .paper-links a { color: var(--blue); border: 1px solid var(--blue-lt); background: var(--blue-lt); padding: 1px 8px; border-radius: 3px; font-family: var(--sans); font-size: 0.78rem; letter-spacing: 0.03em; }
+  .paper-links a:hover { background: var(--blue); color: #fff; text-decoration: none; }
+  .entry { display: flex; gap: 1.5rem; margin-bottom: 0.9rem; align-items: baseline; }
+  .entry-year { font-size: 0.82rem; color: var(--muted); min-width: 90px; flex-shrink: 0; }
+  .entry-body { font-size: 0.95rem; line-height: 1.6; }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+  .chip { font-size: 0.8rem; padding: 4px 12px; border: 1px solid var(--line); border-radius: 20px; color: var(--muted); text-decoration: none; transition: border-color 0.15s, color 0.15s; }
+  .chip:hover { border-color: var(--blue); color: var(--blue); text-decoration: none; }
+  @keyframes fadeUp { from { opacity:0; transform: translateY(10px); } to { opacity:1; transform: translateY(0); } }
+  .page { animation: fadeUp 0.4s ease both; }
+</style>
+
+<title>Research — Seho Park</title>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="index.html">Seho Park</a>
+    <ul class="nav-links">
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="research.html" class="active">Research</a></li>
+      <li><a href="honors.html" >Teaching & Awards</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page">
+  <h1>Research</h1>
+
+  <h3>Preprint</h3>
+
+  <div class="paper">
+    <div class="paper-title">
+      <a href="https://arxiv.org/abs/2605.22198">
+        Periodic Homogenization of Hamilton-Jacobi Equations for Infinite Systems of Indistinguishable Particles
+      </a>
+    </div>
+    <div class="paper-meta">Seho Park &mdash; Preprint, 2025</div>
+    <div class="paper-links">
+      <a href="https://arxiv.org/abs/2605.22198">arXiv</a>
+    </div>
+  </div>
+
+  <hr class="section-rule">
+  <h3>Publications</h3>
+
+  <div class="paper">
+    <div class="paper-title">
+      <a href="#">A general model-based causal inference method overcomes the curse of synchrony and indirect effect</a>
+    </div>
+    <div class="paper-meta">Park, S. H., Ha, S. M., and Kim, J. K. &mdash; <em>Nature Communications</em>, 2023</div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">
+      <a href="#">A real-time, personalized sleep intervention using mathematical modelling and wearable devices</a>
+    </div>
+    <div class="paper-meta">Song, Y. M., Choi, S. J., Park, S. H., Lee, S. J., Joo, E. Y., Kim, J. K. &mdash; <em>Sleep</em>, 2023</div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">
+      <a href="#">Personalized sleep-wake patterns aligned with circadian rhythm relieve daytime sleepiness</a>
+    </div>
+    <div class="paper-meta">Hong, J., Choi, S. J., Park, S. H., Hong, H., Booth, V., Joo, E. Y., and Kim, J. K. &mdash; <em>iScience</em>, 2021</div>
+  </div>
+
+  <hr class="section-rule">
+  <h3>Selected Talks & Presentations</h3>
+
+  <div class="entry">
+    <span class="entry-year">Dec. 2022</span>
+    <span class="entry-body">General ODE based causal inference overcomes the curse of synchrony and indirect effects — <em>Mini Workshop on Recent Trends in Pure and Applied Mathematics</em> (talk)</span>
+  </div>
+  <div class="entry">
+    <span class="entry-year">May 2022</span>
+    <span class="entry-body">General ODE based causal inference overcomes the curse of synchrony and indirect effects — <em>Korean Society for Industrial and Applied Mathematics Spring Meeting</em> (poster)</span>
+  </div>
+  <div class="entry">
+    <span class="entry-year">Dec. 2021</span>
+    <span class="entry-body">Universal method on inferring causality in general biological system — <em>Korean Society for Industrial and Applied Mathematics Fall Meeting</em> (poster)</span>
+  </div>
+  <div class="entry">
+    <span class="entry-year">Dec. 2021</span>
+    <span class="entry-body">Universal method on inferring causality in general biological system — <em>Korean Society for Mathematical Biology Winter Meeting</em> (poster)</span>
+  </div>
+  <div class="entry">
+    <span class="entry-year">Oct. 2021</span>
+    <span class="entry-body">Inferring causality in biological oscillator — <em>Biomedical Mathematics Seminar, BIMAG at IBS</em> (talk)</span>
+  </div>
+  <div class="entry">
+    <span class="entry-year">Oct. 2021</span>
+    <span class="entry-body">Personalized sleep-wake patterns aligned with circadian rhythm relieve daytime sleepiness — <em>Workshop: An Interdisciplinary Approach to Sleep Disorders</em></span>
+  </div>
+  <div class="entry">
+    <span class="entry-year">Jun. 2021</span>
+    <span class="entry-body">Personalized sleep-wake patterns aligned with circadian rhythm relieve daytime sleepiness — <em>Korean Society for Industrial and Applied Mathematics Spring Meeting</em> (poster)</span>
+  </div>
+</div>
+</body>
+</html>
